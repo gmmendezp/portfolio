@@ -53,7 +53,7 @@ module.exports = {
     image: 'arcade.png',
     title: 'Classic Arcade Game Clone',
     summary: 'An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.',
-    demoURL: 'https://gmmendezp.github.io/',
+    demoURL: 'frontend-nanodegree-arcade-game/',
     codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-arcade-game'
   }, {
     image: 'feedreader.png',
