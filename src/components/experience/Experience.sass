@@ -1,0 +1,98 @@
+@import ../../_vars.sass
+
+.experience
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  background-color: $third-bg-color
+  width: 100%
+  padding: 50px 0
+
+.experience-list
+  padding-left: 0
+
+.experience-item
+  position: relative
+  list-style-type: none
+  width: 6px
+  margin: 0 auto
+  padding-top: 50px
+  background: $menu-hover-bg-color
+  color: $primary-text-color
+  letter-spacing: 0.04em
+  @media screen and (max-width: 600px)
+    margin-left: 20px
+  &::after
+    position: absolute
+    content: ''
+    left: 50%
+    bottom: 15px
+    transform: translateX(-50%)
+    width: 27px
+    height: 27px
+    border-radius: 50%
+    background: inherit
+  &::before
+    position: absolute
+    z-index: 15
+    left: 60%
+    bottom: 15px
+    transform: translateX(-50%)
+    content: '\f055'
+    font-family: FontAwesome
+    font-size: 1.2em
+  &:nth-child(odd) div
+    left: 45px
+    &::before
+      left: -15px
+      border-width: 8px 16px 8px 0
+      border-color: transparent $menu-bg-color transparent transparent
+  &:nth-child(even) div
+    left: -468px
+    &::before
+      right: -15px
+      border-width: 8px 0 8px 16px
+      border-color: transparent transparent transparent $menu-bg-color
+      @media screen and (max-width: 600px)
+        left: -15px
+        border-width: 8px 16px 8px 0
+        border-color: transparent $menu-bg-color transparent transparent
+    @media screen and (max-width: 1200px)
+      left: -418px
+    @media screen and (max-width: 1000px)
+      left: -318px
+    @media screen and (max-width: 600px)
+      left: 45px
+
+.experience-info
+  position: relative
+  bottom: 0
+  width: 400px
+  padding: 15px
+  background: $menu-bg-color
+  border-radius: 10px
+  &::before
+    position: absolute
+    content: ''
+    bottom: 22px
+    width: 0
+    height: 0
+    border-style: solid
+  @media screen and (max-width: 1200px)
+    width: 350px
+  @media screen and (max-width: 1000px)
+    width: 250px
+  @media screen and (max-width: 600px)
+    width: calc(90vw - 91px)
+  p
+    margin: 10px
+  .title
+    font-size: 1.3em
+    font-weight: bold
+  .company
+    font-size: 1.1em
+    margin-bottom: 0
+  .dates
+    margin-top: 0
+    font-size: 0.8em

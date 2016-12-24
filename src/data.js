@@ -28,5 +28,21 @@ module.exports = {
     'I\'m Martin, a full stack developer, 27 years old based in Costa Rica.',
     'I started as a back end developer but little by little I\'ve been getting into Front End too.',
     'I\'m passionate about programming, always eager to try new technologies and different fields as algorithms or machine learning, expecting that some day I can apply that knowledge in real projects.'
-  ]
+  ],
+  experience: [{
+    title: 'Web Developer',
+    company: 'Edify Software Consulting',
+    dates: '2015 - Present',
+    description: ''
+  }, {
+    title: 'Java Developer',
+    company: 'PrestoSports',
+    dates: '2013 - 2015',
+    description: ''
+  }, {
+    title: 'Software Engineer',
+    company: 'Avionyx S.A.',
+    dates: '2011 - 2013',
+    description: ''
+  }]
 }

@@ -9,12 +9,12 @@ class Profile extends Component {
   render () {
     let { social, info } = this.props.data
     return (
-      <div className='profile'>
+      <section className='profile'>
         <ProfileImage />
         <ProfileSocial data={social} />
         <Separator />
         <ProfileTitle data={info} />
-      </div>
+      </section>
     )
   }
 }

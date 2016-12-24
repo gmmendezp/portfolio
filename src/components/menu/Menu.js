@@ -17,7 +17,7 @@ class Menu extends Component {
 
   render () {
     return (
-      <div className='menu-container'>
+      <section className='menu-container'>
         <nav className={this.state.showMenu ? 'menu show' : 'menu'}>
           <a href='#about'>About</a>
           <a href='#projects-list'>Portfolio</a>
@@ -30,7 +30,7 @@ class Menu extends Component {
             <FontAwesome name='arrow-down' />
           </a>
         </div>
-      </div>
+      </section>
     )
   }
 }

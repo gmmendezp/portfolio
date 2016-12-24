@@ -17,7 +17,7 @@ class App extends Component {
         <Profile data={data} />
         <About data={data.about} />
         <ProjectList />
-        <Experience data={data.about} />
+        <Experience data={data.experience} />
         <Contact />
         <Footer />
       </div>

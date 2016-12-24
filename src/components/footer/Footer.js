@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class Footer extends Component {
   render () {
     return (
-      <div className='footer not-implemented'>
+      <section className='footer not-implemented'>
         Footer
-      </div>
+      </section>
     )
   }
 }
