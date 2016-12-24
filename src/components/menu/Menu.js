@@ -20,7 +20,7 @@ class Menu extends Component {
       <section className='menu-container'>
         <nav className={this.state.showMenu ? 'menu show' : 'menu'}>
           <a href='#about'>About</a>
-          <a href='#projects-list'>Portfolio</a>
+          <a href='#portfolio'>Portfolio</a>
           <a href='#experience'>Experience</a>
           <a href='#contact'>Contact</a>
         </nav>

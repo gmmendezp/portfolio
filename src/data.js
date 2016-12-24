@@ -8,26 +8,68 @@ module.exports = {
   },
   social: [{
     name: 'github',
-    link: 'https://github.com/gmmendezp'
+    url: 'https://github.com/gmmendezp'
   }, {
     name: 'gitlab',
-    link: 'https://gitlab.com/gmmendezp'
+    url: 'https://gitlab.com/gmmendezp'
   }, {
     name: 'linkedin',
-    link: 'https://www.linkedin.com/in/martín-méndez-38aab22b'
+    url: 'https://www.linkedin.com/in/martín-méndez-38aab22b'
   }, {
     name: 'twitter',
-    link: 'https://twitter.com/gmmendezp'
+    url: 'https://twitter.com/gmmendezp'
   }, {
     name: 'facebook',
-    link: 'https://facebook.com/gmmendezp'
+    url: 'https://facebook.com/gmmendezp'
   }],
   about: [
     'I\'m Martin, a full stack developer, 27 years old based in Costa Rica.',
     'I started as a back end developer but little by little I\'ve been getting into Front End too.',
     'I\'m passionate about programming, always eager to try new technologies and different fields as algorithms or machine learning, expecting that some day I can apply that knowledge in real projects.'
   ],
-  projects: [],
+  projects: [{
+    image: 'portfolio.png',
+    title: 'Resume/Portfolio',
+    summary: 'Improvements done to the portfolio and interactive resume projects for Udacity\'s Front End Nanodegree. The new version is done using React, Webpack, Sass and Babel.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://github.com/gmmendezp/portfolio'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Nyssa FE Project Generator',
+    summary: 'Yeoman generator to create Front End projects using React, Sass, Babel, Karma, ESLint and other technologies.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://gitlab.com/ka-le/generator-nyssa-fe'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Dota 2 Sentry Bot',
+    summary: 'Node library to gather Dota 2 player information as MMR, stats and lobby creation/management.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://gitlab.com/DogShell_Development/sentry'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Neighborhood Map',
+    summary: 'A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare and Wikipedia APIs.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-neighborhood-map'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Classic Arcade Game Clone',
+    summary: 'An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-arcade-game'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Feed Reader Testing',
+    summary: 'Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google\'s RSS API.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-feedreader'
+  }, {
+    image: 'http://placehold.it/960x540',
+    title: 'Website Optimization',
+    summary: 'Optimized an inefficient web application\'s JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.',
+    demoURL: 'https://gmmendezp.github.io/',
+    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-mobile-portfolio'
+  }],
   experience: [{
     title: 'Web Developer',
     company: 'Edify Software Consulting',
@@ -45,7 +87,7 @@ module.exports = {
     company: 'PrestoSports',
     startDate: '2013',
     endDate: '2015',
-    summary: 'Continuous development of CMS for Universities sport related sites. Using Java, Spring, GWT, Javascript, jQuery, MySQL and others.'
+    summary: 'Continuous development of a CMS for college sports teams. Using Java, Spring, GWT, Javascript, jQuery, MySQL and others.'
   }, {
     title: 'Software Engineer',
     company: 'Avionyx S.A.',

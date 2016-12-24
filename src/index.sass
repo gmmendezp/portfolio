@@ -59,10 +59,14 @@ textarea
   width: 100%
   margin: 0
   padding: 6px 12px
-  background-color: white
-  border: 1px solid $secondary-text-color
+  background-color: $menu-bg-color
+  color: $primary-text-color
+  border: 1px solid $primary-text-color
   border-radius: 4px
   font-weight: bold
+  &:hover
+    background-color: $menu-hover-bg-color
+    cursor: pointer
 
 .not-implemented
   display: none

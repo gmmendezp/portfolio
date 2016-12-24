@@ -8,7 +8,7 @@ class ProfileSocial extends Component {
       <ul className='profile-social'>
         {
           this.props.data.map(profile => <FontAwesome key={profile.name}
-            name={profile.name} tag='a' href={profile.link} />)
+            name={profile.name} tag='a' href={profile.url} />)
         }
       </ul>
     )

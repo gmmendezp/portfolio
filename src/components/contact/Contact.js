@@ -8,9 +8,10 @@ class Contact extends Component {
       <section id='contact' className='contact'>
         <h3 className='section-title'>Contact</h3>
         <form action={action} method='POST' className='section-body'>
-          <input className='form-input' type='email' placeholder='Your email' name='email' />
+          <input className='form-input' type='email' placeholder='Your email'
+            name='email' />
           <textarea name='name' placeholder='Your message' rows='6' />
-          <button className='btn right' type='submit'>Send</button>
+          <button className='btn' type='submit'>Send</button>
         </form>
       </section>
     )

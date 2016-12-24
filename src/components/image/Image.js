@@ -4,11 +4,10 @@ import './image.sass'
 class ProfileImage extends Component {
   render () {
     let { image, className, ...other } = this.props
-    image = require(`../../assets/${this.props.image}`)
-    className = `img ${className}`
-    console.log(other)
+    let imageURL = image.includes('http') ? image : require(`../../assets/${image}`)
+    let newClassName = `img ${className}`
     return (
-      <img src={image} className={className} {...other} />
+      <img src={imageURL} className={newClassName} {...other} />
     )
   }
 }
