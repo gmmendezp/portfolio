@@ -7,10 +7,10 @@ import './Profile.sass'
 
 class Profile extends Component {
   render () {
-    let { social, info } = this.props.data
+    let { social, info } = this.props.profile
     return (
       <section className='profile'>
-        <ProfileImage />
+        <ProfileImage image={info.image} />
         <ProfileSocial data={social} />
         <Separator />
         <ProfileTitle data={info} />
@@ -20,7 +20,7 @@ class Profile extends Component {
 }
 
 Profile.propTypes = {
-  data: React.PropTypes.object.isRequired
+  profile: React.PropTypes.object.isRequired
 }
 
 export default Profile

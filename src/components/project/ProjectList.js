@@ -10,4 +10,8 @@ class ProjectList extends Component {
   }
 }
 
+ProjectList.propTypes = {
+  projects: React.PropTypes.array.isRequired
+}
+
 export default ProjectList

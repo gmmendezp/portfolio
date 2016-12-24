@@ -3,7 +3,8 @@ module.exports = {
     firstName: 'Martín',
     lastName: 'Méndez',
     label: 'Full stack developer',
-    email: 'gmmendezp@gmail.com'
+    email: 'gmmendezp@gmail.com',
+    image: 'profile.jpg'
   },
   social: [{
     name: 'github',
@@ -26,6 +27,7 @@ module.exports = {
     'I started as a back end developer but little by little I\'ve been getting into Front End too.',
     'I\'m passionate about programming, always eager to try new technologies and different fields as algorithms or machine learning, expecting that some day I can apply that knowledge in real projects.'
   ],
+  projects: [],
   experience: [{
     title: 'Web Developer',
     company: 'Edify Software Consulting',

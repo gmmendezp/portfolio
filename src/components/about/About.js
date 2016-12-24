@@ -7,7 +7,8 @@ class About extends Component {
       <section id='about' className='about'>
         <h3 className='about-title section-title'>About</h3>
         <div className='section-body'>
-          {this.props.data.map((p, index) => <p className='about-text' key={index}>{p}</p>)}
+          {this.props.data.map(
+            (p, index) => <p className='about-text' key={index}>{p}</p>)}
         </div>
       </section>
     )

@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-import profileImage from '../../assets/profile.jpg'
 import './ProfileImage.sass'
 
 class ProfileImage extends Component {
   render () {
+    let image = require(`../../assets/${this.props.image}`)
     return (
       <div className='profile-img-container'>
-        <img src={profileImage} className='profile-img' alt="Martin's profile image" />
+        <img src={image} className='profile-img' alt='Profile image' />
       </div>
     )
   }
+}
+
+ProfileImage.propTypes = {
+  image: React.PropTypes.string.isRequired
 }
 
 export default ProfileImage

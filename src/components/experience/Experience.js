@@ -20,7 +20,7 @@ class Experience extends Component {
         <h3 className='experience-title section-title'>Experience</h3>
         <div className='timeline section-body'>
           <ul className='experience-list'>
-            {this.props.data.map(this.renderExperience)}
+            {this.props.experience.map(this.renderExperience)}
           </ul>
         </div>
       </section>
@@ -29,7 +29,7 @@ class Experience extends Component {
 }
 
 Experience.propTypes = {
-  data: React.PropTypes.array.isRequired
+  experience: React.PropTypes.array.isRequired
 }
 
 export default Experience

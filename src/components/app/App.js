@@ -14,11 +14,11 @@ class App extends Component {
     return (
       <div className='app'>
         <Menu />
-        <Profile data={data} />
+        <Profile profile={data} />
         <About data={data.about} />
-        <ProjectList />
-        <Experience data={data.experience} />
-        <Contact data={data.info} />
+        <ProjectList projects={data.projects} />
+        <Experience experience={data.experience} />
+        <Contact info={data.info} />
         <Footer />
       </div>
     )
