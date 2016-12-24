@@ -26,10 +26,10 @@ h3
     font-size: 1.6em
 
 a
-  color: $primary-text-color
+  color: $secondary-text-color
   text-decoration: none
   &:hover
-    color: $secondary-text-color
+    color: $tertiary-text-color
 
 .form-input
   display: block
@@ -57,15 +57,16 @@ textarea
   display: block
   height: 34px
   width: 100%
-  margin: 0
+  margin: 1px 0
   padding: 6px 12px
   background-color: $menu-bg-color
-  color: $primary-text-color
-  border: 1px solid $primary-text-color
+  color: $secondary-text-color
+  border: 1px outset $secondary-text-color
   border-radius: 4px
   font-weight: bold
   &:hover
     background-color: $menu-hover-bg-color
+    color: $tertiary-text-color
     cursor: pointer
 
 .not-implemented
