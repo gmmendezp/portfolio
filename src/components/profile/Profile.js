@@ -7,15 +7,20 @@ import './Profile.sass'
 
 class Profile extends Component {
   render () {
+    let { social, info } = this.props.data
     return (
       <div className='profile'>
         <ProfileImage />
-        <ProfileSocial />
+        <ProfileSocial data={social} />
         <Separator />
-        <ProfileTitle />
+        <ProfileTitle data={info} />
       </div>
     )
   }
+}
+
+Profile.propTypes = {
+  data: React.PropTypes.object.isRequired
 }
 
 export default Profile

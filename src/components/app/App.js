@@ -5,6 +5,7 @@ import ProjectList from '../project/ProjectList'
 import Contact from '../contact/Contact'
 import Footer from '../footer/Footer'
 import Menu from '../menu/Menu'
+import data from '../../data'
 import './App.sass'
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
     return (
       <div className='app'>
         <Menu />
-        <Profile />
+        <Profile data={data} />
         <About />
         <ProjectList />
         <Contact />
