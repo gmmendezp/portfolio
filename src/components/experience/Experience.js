@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 import './Experience.sass'
 
 class Experience extends Component {
-  toEvent (exp){
-    return {
-      date: new Date(exp.dates.split('-')[0]),
-      title: exp.title,
-      text: exp.company
-    }
-  }
   renderExperience (exp, index) {
     return (
       <li key={exp.title + index} className='experience-item'>
