@@ -3,10 +3,7 @@ module.exports = {
     firstName: 'Martín',
     lastName: 'Méndez',
     label: 'Full stack developer',
-    phone: '(+506)88483668',
-    email: 'gmmendezp@gmail.com',
-    website: 'gmmendezp.github.io',
-    location: 'Heredia, Costa Rica'
+    email: 'gmmendezp@gmail.com'
   },
   social: [{
     name: 'github',
