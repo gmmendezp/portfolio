@@ -34,23 +34,21 @@ module.exports = {
     demoURL: 'https://gmmendezp.github.io/',
     codeURL: 'https://github.com/gmmendezp/portfolio'
   }, {
+    image: 'neighborhood.png',
+    title: 'Neighborhood Map',
+    summary: 'A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare and Wikipedia APIs.',
+    demoURL: 'frontend-nanodegree-neighborhood-map',
+    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-neighborhood-map'
+  }, {
     image: 'http://placehold.it/960x540',
     title: 'Nyssa FE Project Generator',
     summary: 'Yeoman generator to create Front End projects using React, Sass, Babel, Karma, ESLint and other technologies.',
-    demoURL: 'https://gmmendezp.github.io/',
     codeURL: 'https://gitlab.com/ka-le/generator-nyssa-fe'
   }, {
     image: 'http://placehold.it/960x540',
     title: 'Dota 2 Sentry Bot',
     summary: 'Node library to gather Dota 2 player information as MMR, stats and lobby creation/management.',
-    demoURL: 'https://gmmendezp.github.io/',
     codeURL: 'https://gitlab.com/DogShell_Development/sentry'
-  }, {
-    image: 'http://placehold.it/960x540',
-    title: 'Neighborhood Map',
-    summary: 'A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare and Wikipedia APIs.',
-    demoURL: 'https://gmmendezp.github.io/',
-    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-neighborhood-map'
   }, {
     image: 'http://placehold.it/960x540',
     title: 'Classic Arcade Game Clone',
@@ -58,10 +56,10 @@ module.exports = {
     demoURL: 'https://gmmendezp.github.io/',
     codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-arcade-game'
   }, {
-    image: 'http://placehold.it/960x540',
+    image: 'feedreader.png',
     title: 'Feed Reader Testing',
     summary: 'Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google\'s RSS API.',
-    demoURL: 'https://gmmendezp.github.io/',
+    demoURL: 'frontend-nanodegree-feedreader/',
     codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-feedreader'
   }, {
     image: 'http://placehold.it/960x540',
