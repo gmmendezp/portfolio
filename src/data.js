@@ -32,17 +32,57 @@ module.exports = {
   experience: [{
     title: 'Web Developer',
     company: 'Edify Software Consulting',
-    dates: '2015 - Present',
-    description: ''
+    startDate: '2015',
+    endDate: 'Present',
+    summary: 'Development of projects for education entities. Projects are developed using Javascript, Ember, Java, Spring, CakePHP, MySQL, PostgreSQL, MongoDB, jQuery, Sass, etc.'
+  }, {
+    company: 'Independent',
+    title: 'Python and R Scripts Developer',
+    startDate: '2013',
+    endDate: '2014',
+    summary: 'Development of scripting projects using R and python. The projects involved parsing xml, performing data queries, creating plots and others.'
   }, {
     title: 'Java Developer',
     company: 'PrestoSports',
-    dates: '2013 - 2015',
-    description: ''
+    startDate: '2013',
+    endDate: '2015',
+    summary: 'Continuous development of CMS for Universities sport related sites. Using Java, Spring, GWT, Javascript, jQuery, MySQL and others.'
   }, {
     title: 'Software Engineer',
     company: 'Avionyx S.A.',
-    dates: '2011 - 2013',
-    description: ''
+    startDate: '2011',
+    endDate: '2013',
+    summary: 'Requirements, tests and code development for avionics systems following the DO-178B standard and made in C, C++ and assembly.'
+  }],
+  education: [{
+    institution: 'Universidad Nacional de Costa Rica',
+    area: 'Computer Science',
+    studyType: 'Bachelors',
+    startDate: '2007-02-15',
+    endDate: '2012-05-04'
+  }, {
+    institution: 'Udacity',
+    area: 'Machine Learning',
+    studyType: 'Online Nanodegree',
+    startDate: '2016',
+    endDate: 'Current'
+  }, {
+    institution: 'Udacity',
+    area: 'Front End Web Development',
+    studyType: 'Online Nanodegree',
+    startDate: '2016',
+    endDate: '2016'
+  }, {
+    institution: 'Coursera',
+    area: 'Data Structures and Algorithms',
+    studyType: 'Online Specialization',
+    startDate: '2016',
+    endDate: '2016'
+  }, {
+    institution: 'SCRUMStudy',
+    area: 'Scrum Fundamentals Certified (SFC)',
+    studyType: 'Online Acreditation',
+    startDate: '2015',
+    endDate: '2015'
   }]
 }

@@ -8,8 +8,8 @@ class Experience extends Component {
         <div className='experience-info'>
           <p className='title'>{exp.title}</p>
           <p className='company'>{exp.company}</p>
-          <p className='dates'>{exp.dates}</p>
-          <p className='description'>{exp.description}</p>
+          <p className='dates'>{exp.startDate} - {exp.endDate}</p>
+          <p className='summary'>{exp.summary}</p>
         </div>
       </li>
     )
