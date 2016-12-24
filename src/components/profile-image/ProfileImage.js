@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
+import Image from '../image/Image'
 import './ProfileImage.sass'
 
 class ProfileImage extends Component {
   render () {
-    let image = require(`../../assets/${this.props.image}`)
     return (
       <div className='profile-img-container'>
-        <img src={image} className='profile-img' alt='Profile image' />
+        <Image image={this.props.image} className='profile-img' alt='Profile image' />
       </div>
     )
   }
