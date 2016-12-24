@@ -37,20 +37,20 @@ module.exports = {
     image: 'neighborhood.png',
     title: 'Neighborhood Map',
     summary: 'A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare and Wikipedia APIs.',
-    demoURL: 'frontend-nanodegree-neighborhood-map',
+    demoURL: 'frontend-nanodegree-neighborhood-map/',
     codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-neighborhood-map'
   }, {
-    image: 'http://placehold.it/960x540',
+    image: 'nyssa.png',
     title: 'Nyssa FE Project Generator',
     summary: 'Yeoman generator to create Front End projects using React, Sass, Babel, Karma, ESLint and other technologies.',
     codeURL: 'https://gitlab.com/ka-le/generator-nyssa-fe'
   }, {
-    image: 'http://placehold.it/960x540',
+    image: 'sentry.png',
     title: 'Dota 2 Sentry Bot',
     summary: 'Node library to gather Dota 2 player information as MMR, stats and lobby creation/management.',
     codeURL: 'https://gitlab.com/DogShell_Development/sentry'
   }, {
-    image: 'http://placehold.it/960x540',
+    image: 'arcade.png',
     title: 'Classic Arcade Game Clone',
     summary: 'An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.',
     demoURL: 'https://gmmendezp.github.io/',
@@ -61,12 +61,6 @@ module.exports = {
     summary: 'Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google\'s RSS API.',
     demoURL: 'frontend-nanodegree-feedreader/',
     codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-feedreader'
-  }, {
-    image: 'http://placehold.it/960x540',
-    title: 'Website Optimization',
-    summary: 'Optimized an inefficient web application\'s JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.',
-    demoURL: 'https://gmmendezp.github.io/',
-    codeURL: 'https://github.com/gmmendezp/frontend-nanodegree-mobile-portfolio'
   }],
   experience: [{
     title: 'Web Developer',
