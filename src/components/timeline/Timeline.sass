@@ -13,24 +13,20 @@
     margin-left: 20px
   &::after
     position: absolute
-    content: ''
     left: 50%
     bottom: 15px
-    transform: translateX(-50%)
-    width: 27px
-    height: 27px
-    border-radius: 50%
-    background: inherit
-  &::before
-    position: absolute
-    z-index: 15
-    left: 50%
-    padding-left: 1px
-    bottom: 19px
     transform: translateX(-50%)
     content: '\f055'
     font-family: FontAwesome
     font-size: 1.2em
+    text-align: center
+    line-height: 27px
+    width: 25px
+    height: 27px
+    background: inherit
+    border-radius: 50%
+    padding-left: 1px
+
   &:nth-child(odd) div
     left: 45px
     &::before

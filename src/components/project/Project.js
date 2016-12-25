@@ -14,9 +14,7 @@ class ProjectList extends Component {
   }
 
   renderBtn (url, value) {
-    return url ? <button onClick={
-      () => this.click(url)
-    } className='btn' >{value}</button> : ''
+    return url ? <a href={url}><button className='btn' >{value}</button></a> : ''
   }
 
   render () {
