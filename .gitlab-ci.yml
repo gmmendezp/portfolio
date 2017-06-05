@@ -1,20 +1,9 @@
 image: node:latest
 
-stages:
-  - build
-  - test
-
-install:
-  stage: build
-  script:
-    - npm install
-
-lint:
-  stage: test
-  script:
-    - npm run lint
+before_script:
+  - npm install
 
 test:
-  stage: test
-  script:
-    - npm test
+    script:
+      - npm run lint
+      - npm test
