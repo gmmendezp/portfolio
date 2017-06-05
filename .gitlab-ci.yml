@@ -1,12 +1,20 @@
 image: node:latest
 
-before_script:
-  - npm install
+stages:
+  - build
+  - test
+
+install:
+  stage: build
+  script:
+    - npm install
 
 lint:
+  stage: test
   script:
     - npm run lint
 
 test:
-    script:
-      - npm test
+  stage: test
+  script:
+    - npm test
