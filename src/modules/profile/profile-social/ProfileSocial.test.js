@@ -5,5 +5,5 @@ import { ProfileSocial } from './ProfileSocial'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<ProfileSocial />, div)
+  ReactDOM.render(<ProfileSocial data={[]} />, div)
 })

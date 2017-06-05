@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 
 export class Image extends Component {
@@ -12,7 +13,7 @@ export class Image extends Component {
 
   render () {
     let { image, className, alt, ...other } = this.props
-    let imageURL = image.includes('http')
+    let imageURL = !image || image.includes('http')
       ? image
       : require(`../../../assets/${image}`)
     let newClassName = `img ${className || ''} ${this.classNames.base}`
@@ -21,9 +22,9 @@ export class Image extends Component {
 }
 
 Image.propTypes = {
-  image: React.PropTypes.string.isRequired,
-  alt: React.PropTypes.string,
-  className: React.PropTypes.string
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+  className: PropTypes.string
 }
 
 export default Image

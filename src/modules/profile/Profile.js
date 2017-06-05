@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { flexRoot, wrap, centerJustified } from 'csstips'
 import { CSS } from '../../constants'
@@ -33,8 +34,8 @@ export class Profile extends Component {
 }
 
 Profile.propTypes = {
-  info: React.PropTypes.object.isRequired,
-  social: React.PropTypes.object.isRequired
+  info: PropTypes.object.isRequired,
+  social: PropTypes.array.isRequired
 }
 
 export default Profile

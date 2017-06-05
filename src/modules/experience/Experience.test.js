@@ -5,5 +5,5 @@ import { Experience } from './Experience'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Experience />, div)
+  ReactDOM.render(<Experience experience={[]} />, div)
 })

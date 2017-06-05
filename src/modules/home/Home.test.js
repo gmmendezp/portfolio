@@ -1,9 +1,11 @@
 /* eslint-env jest */
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { shallow } from 'enzyme'
 import { Home } from './Home'
 
 test('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<Home />, div)
+  const component = shallow(
+    <Home social={[]} info={{}} about={[]} projects={[]} experience={[]} />
+  )
+  expect(component.exists())
 })

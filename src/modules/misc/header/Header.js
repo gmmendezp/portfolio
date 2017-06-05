@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import { CSS } from '../../../constants'
 
@@ -37,8 +38,8 @@ export class Header extends Component {
 }
 
 Header.propTypes = {
-  className: React.PropTypes.string,
-  tag: React.PropTypes.oneOf(['h1', 'h2', 'h3'])
+  className: PropTypes.string,
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3']).isRequired
 }
 
 export default Header

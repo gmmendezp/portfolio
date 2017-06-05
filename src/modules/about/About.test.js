@@ -5,5 +5,5 @@ import { About } from './About'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<About />, div)
+  ReactDOM.render(<About data={[]} />, div)
 })

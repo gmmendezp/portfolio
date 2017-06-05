@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import { CSS } from '../../../constants'
 import Header from '../header/Header'
@@ -26,7 +27,7 @@ export class SectionTitle extends Component {
 }
 
 SectionTitle.propTypes = {
-  className: React.PropTypes.string
+  className: PropTypes.string
 }
 
 export default SectionTitle

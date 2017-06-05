@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import { flexRoot, aroundJustified } from 'csstips'
 import FontAwesome from 'react-fontawesome'
@@ -26,21 +27,22 @@ export class ProfileSocial extends Component {
   render () {
     return (
       <ul className={this.classNames.base}>
-        {this.props.data.map(profile =>
-          <FontAwesome
-            key={profile.name}
-            name={profile.name}
-            tag='a'
-            href={profile.url}
-          />
-        )}
+        {(this.props.data || [])
+          .map(profile =>
+            <FontAwesome
+              key={profile.name}
+              name={profile.name}
+              tag='a'
+              href={profile.url}
+            />
+          )}
       </ul>
     )
   }
 }
 
 ProfileSocial.propTypes = {
-  data: React.PropTypes.array.isRequired
+  data: PropTypes.array.isRequired
 }
 
 export default ProfileSocial

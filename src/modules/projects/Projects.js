@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { flexRoot, wrap } from 'csstips'
 import { CSS } from '../../constants'
@@ -22,9 +23,8 @@ export class Projects extends Component {
       <section id='portfolio' className={this.classNames.base}>
         <SectionTitle>Portfolio</SectionTitle>
         <SectionBody className={this.classNames.body}>
-          {this.props.projects.map(project =>
-            <Project key={project.title} project={project} />
-          )}
+          {(this.props.projects || [])
+            .map(project => <Project key={project.title} project={project} />)}
         </SectionBody>
       </section>
     )
@@ -32,7 +32,7 @@ export class Projects extends Component {
 }
 
 Projects.propTypes = {
-  projects: React.PropTypes.array.isRequired
+  projects: PropTypes.array.isRequired
 }
 
 export default Projects

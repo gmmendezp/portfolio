@@ -5,5 +5,5 @@ import { Timeline } from './Timeline'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Timeline />, div)
+  ReactDOM.render(<Timeline projects={[]} />, div)
 })

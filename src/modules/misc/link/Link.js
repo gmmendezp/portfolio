@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { CSS } from '../../../constants'
 
@@ -25,7 +26,7 @@ export class Link extends Component {
 }
 
 Link.propTypes = {
-  className: React.PropTypes.string
+  className: PropTypes.string
 }
 
 export default Link

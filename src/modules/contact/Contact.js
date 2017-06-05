@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import {
   flexRoot,
@@ -59,7 +60,7 @@ export class Contact extends Component {
 }
 
 Contact.propTypes = {
-  info: React.PropTypes.object.isRequired
+  info: PropTypes.object.isRequired
 }
 
 export default Contact

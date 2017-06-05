@@ -5,5 +5,5 @@ import { Project } from './Project'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Project />, div)
+  ReactDOM.render(<Project project={{ image: '' }} />, div)
 })

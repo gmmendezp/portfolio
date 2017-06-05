@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { CSS } from '../../../constants'
 
@@ -33,10 +34,10 @@ export class TextArea extends Component {
 }
 
 TextArea.propTypes = {
-  className: React.PropTypes.string,
-  name: React.PropTypes.string,
-  placeholder: React.PropTypes.string,
-  rows: React.PropTypes.string
+  className: PropTypes.string,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
+  rows: PropTypes.string
 }
 
 export default TextArea

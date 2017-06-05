@@ -5,5 +5,5 @@ import { Contact } from './Contact'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Contact />, div)
+  ReactDOM.render(<Contact info={{ email: '' }} />, div)
 })

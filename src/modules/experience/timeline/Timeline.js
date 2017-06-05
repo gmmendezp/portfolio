@@ -17,7 +17,7 @@ export class Timeline extends Component {
   render () {
     return (
       <ul className='timeline'>
-        {this.props.children.map(this.renderChild)}
+        {(this.props.children || []).map(this.renderChild)}
       </ul>
     )
   }

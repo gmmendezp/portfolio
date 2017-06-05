@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { flexRoot, vertical, wrap, centerJustified } from 'csstips'
 import { CSS } from '../../constants'
@@ -19,9 +20,8 @@ export class About extends Component {
       <section id='about' className={this.classNames.base}>
         <SectionTitle>About</SectionTitle>
         <SectionBody>
-          {this.props.data.map((p, index) =>
-            <p className='about-text' key={index}>{p}</p>
-          )}
+          {(this.props.data || [])
+            .map((p, index) => <p className='about-text' key={index}>{p}</p>)}
         </SectionBody>
       </section>
     )
@@ -29,7 +29,7 @@ export class About extends Component {
 }
 
 About.propTypes = {
-  data: React.PropTypes.array.isRequired
+  data: PropTypes.array.isRequired
 }
 
 export default About

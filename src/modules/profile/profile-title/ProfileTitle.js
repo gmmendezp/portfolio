@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { CSS } from '../../../constants'
 import Header from '../../misc/header/Header'
@@ -39,7 +40,7 @@ export class ProfileTitle extends Component {
 }
 
 ProfileTitle.propTypes = {
-  data: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired
 }
 
 export default ProfileTitle

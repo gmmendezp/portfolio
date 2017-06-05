@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import { CSS } from '../../../constants'
 import Image from '../../misc/image/Image'
@@ -36,7 +37,7 @@ export class ProfileImage extends Component {
 }
 
 ProfileImage.propTypes = {
-  image: React.PropTypes.string.isRequired
+  image: PropTypes.string.isRequired
 }
 
 export default ProfileImage

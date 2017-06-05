@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style, media } from 'typestyle'
 import { flexRoot, wrap, endJustified, selfStart } from 'csstips'
 import { CSS } from '../../../constants'
@@ -83,7 +84,7 @@ export class Project extends Component {
 }
 
 Project.propTypes = {
-  project: React.PropTypes.object.isRequired
+  project: PropTypes.object.isRequired
 }
 
 export default Project

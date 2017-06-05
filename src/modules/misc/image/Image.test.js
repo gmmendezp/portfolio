@@ -5,5 +5,5 @@ import { Image } from './Image'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Image />, div)
+  ReactDOM.render(<Image image='' />, div)
 })

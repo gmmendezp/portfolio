@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { CSS } from '../../../constants'
 
@@ -22,7 +23,7 @@ export class Separator extends Component {
 }
 
 Separator.propTypes = {
-  className: React.PropTypes.string
+  className: PropTypes.string
 }
 
 export default Separator

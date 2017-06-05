@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { CSS } from '../../../constants'
 
@@ -33,10 +34,10 @@ export class Input extends Component {
 }
 
 Input.propTypes = {
-  className: React.PropTypes.string,
-  type: React.PropTypes.string,
-  placeholder: React.PropTypes.string,
-  name: React.PropTypes.string
+  className: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  name: PropTypes.string
 }
 
 export default Input

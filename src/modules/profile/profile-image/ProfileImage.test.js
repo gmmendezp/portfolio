@@ -5,5 +5,5 @@ import { ProfileImage } from './ProfileImage'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<ProfileImage />, div)
+  ReactDOM.render(<ProfileImage image='' />, div)
 })

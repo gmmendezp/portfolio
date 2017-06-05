@@ -5,5 +5,8 @@ import { ProfileTitle } from './ProfileTitle'
 
 test('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<ProfileTitle />, div)
+  ReactDOM.render(
+    <ProfileTitle data={{ firstName: '', lastName: '', label: '' }} />,
+    div
+  )
 })

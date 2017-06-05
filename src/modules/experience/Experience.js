@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { style } from 'typestyle'
 import { flexRoot, vertical, wrap } from 'csstips'
 import { CSS } from '../../constants'
@@ -51,7 +52,7 @@ export class Experience extends Component {
       <section id='experience' className={this.classNames.base}>
         <SectionTitle>Experience</SectionTitle>
         <Timeline>
-          {this.props.experience.map(this.renderExperience.bind(this))}
+          {(this.props.experience || []).map(this.renderExperience.bind(this))}
         </Timeline>
       </section>
     )
@@ -59,7 +60,7 @@ export class Experience extends Component {
 }
 
 Experience.propTypes = {
-  experience: React.PropTypes.array.isRequired
+  experience: PropTypes.array.isRequired
 }
 
 export default Experience
