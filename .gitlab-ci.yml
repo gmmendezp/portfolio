@@ -1,0 +1,12 @@
+image: node:latest
+
+before_script:
+  - npm install
+
+lint:
+  script:
+    - npm run lint
+
+test:
+    script:
+      - npm test
